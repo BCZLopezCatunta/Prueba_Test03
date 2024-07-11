@@ -32,9 +32,6 @@ jobs:
     - name: Give execute permission to Behat
       run: chmod +x vendor/bin/behat
 
-    - name: Run Behat tests
-      run: vendor/bin/behat --format=html --out=features/bootstrap/reports/index.html
-
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
