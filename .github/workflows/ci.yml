@@ -52,6 +52,6 @@ jobs:
       if: always()
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.PAT_TOKEN }}
+        personal_token: ${{ secrets.PATH_TOKEN }}
         publish_branch: bddreporte
         publish_dir: features/bootstrap/reports
